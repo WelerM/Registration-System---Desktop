@@ -1,0 +1,245 @@
+
+/* ========= REGISTRATION INTERFACE ======= */
+.registration-interface {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px 25px;
+    width: 500px;
+    background-color: rgba(53, 53, 53, 0.757);
+    box-shadow: 10px 0px 15px rgba(255, 255, 255, 0.065);
+    border-right: 1px solid rgba(255, 255, 255, 0.406);
+    height: 100vh;
+    position:relative;
+}
+.registration-interface > h3{
+    text-align: center;
+}
+.registration-interface>input {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgba(0, 0, 0, 0.356);
+    padding-left: 10px;
+    outline: none;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px; 
+    letter-spacing: 0.5px;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.128);
+}
+
+.options_container {
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.356);
+    padding-left: 10px;
+    padding-top: 10px;
+    outline: none;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+    color: rgba(255, 255, 255, 0.644);
+    border: 1px solid rgba(255, 255, 255, 0.128);
+    position: relative;
+}
+
+.options_container:hover {
+    cursor: pointer;
+}
+.options_container-on{
+    height: fit-content;
+}
+.selecione_aqui {
+    position: absolute;
+    bottom: 7px;
+}
+.selecione_aqui-hide{
+    display: none;
+}
+.option {
+    border: none;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    display: none;
+ 
+}
+.option:hover{
+    background-color: rgba(58, 58, 58, 0.824);
+    cursor: pointer;
+}
+.option-on{
+    display: flex;
+}
+
+.registration-interface>h4 {
+    text-align: center;
+}
+
+.registration-interface>p {
+    margin-bottom: 5px;
+    position: relative;
+    left: 3px;
+}
+
+span {
+    font-size: 18px;
+}
+
+
+.buscar-visitante,
+.ajuda {
+    background-color: goldenrod;
+    height: 50px;
+    width: 230px;
+    position: relative;
+    left: -140px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    color: black;
+    padding: 10px;
+    transition: 0.7s;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.buscar-visitante:hover,
+.ajuda:hover {
+    cursor: pointer;
+    background-color: rgb(180, 138, 32);
+}
+
+.buscar-visitante-on {
+    left: 230px;
+    transition: 0.7s;
+    position: relative;
+    width: 230px;
+}
+
+.cadastro-warning-hide {
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    display: none;
+}
+
+.cadastro-warning-show {
+    display: block;
+}
+.clean_btns_container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#limpar-dados {
+    width: 155px;
+    padding: 5px 5px;
+    font-size: 14px;
+    position: relative;
+    right: 0px;
+    border: none;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: 0.5s;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.292);
+    background-color: rgba(56, 56, 56, 0.516);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.245);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+#limpar-dados > img{
+    width: 20px;
+}
+
+#limpar-dados:hover {
+    cursor: pointer;
+    background-color: rgba(31, 31, 31, 0.516);
+    transition: 0.5s;
+}
+
+#btn_clean_columns{
+    width: 160px;
+    padding: 5px 3px;
+    font-size: 13px;
+    position: relative;
+    right: 0px;
+    border: none;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: 0.5s;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.292);
+    background-color: rgba(56, 56, 56, 0.516);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.245);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+#btn_clean_columns > img{
+    width: 20px;
+}
+#btn_clean_columns:hover{
+    cursor: pointer;
+    background-color: rgba(31, 31, 31, 0.516);
+    transition: 0.5s;
+}
+
+#btn_cadastrar {
+    height: 40px;
+    width: 100%;
+    color:white;
+    border: none;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 15px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.292);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 40px;
+    transition: 0.5s;
+    gap: 10px;
+    position: relative;
+    background-color: rgba(56, 56, 56, 0.516);
+    border: 1px solid rgba(255, 255, 255, 0.245);
+}
+#btn_cadastrar > img{
+    width: 25px;
+}
+
+#btn_cadastrar:hover {
+    cursor: pointer;
+    background-color: rgba(31, 31, 31, 0.516);
+    transition: 0.5s;
+}
+
+#btn_cadastrar>p {
+    font-size: 20px;
+}
+
+.btn_unavailable {
+    height: 40px;
+    width: 100%;
+    background-color: rgba(16, 113, 100, 0.342);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    position: relative;
+    margin-top: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.194);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.292);
+}

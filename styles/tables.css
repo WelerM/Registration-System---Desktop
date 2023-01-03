@@ -1,0 +1,113 @@
+
+.output-screen {
+    border-radius: 5px;
+    text-align: center;
+    background-color: black;
+}
+
+#output-h2 {
+    padding: 10px;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.726);
+    display: none;
+}
+
+.output-screen-container-titles {
+    width: 100%;
+    display: flex;
+}
+
+.nada-encontrado {
+    width: 950px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 0, 0, 0.588);
+    display: none;
+}
+
+.output-screen-container-titles>* {
+    width: 120px;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.568);
+    padding: 5px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    background-color: rgba(128, 128, 128, 0.356)
+}
+
+.colunas-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+}
+
+.colunas-container>* {
+    width: 120px;
+    height: 90%;
+    /*   border: 1px solid rgba(0, 0, 0, 0.568); */
+}
+
+.colunas-container>*>* {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.582);
+    padding: 5px 0px;
+    font-size: 15px;
+    background-color: rgba(104, 104, 104, 0.331);
+}
+
+.col-title-visita,
+.output-col-visita {
+    width: 180px;
+}
+.col-title-blank{
+    width: 172px;
+
+    height:30px;
+}
+
+.row {
+    display: flex;
+    width: 950px;
+}
+
+.row:hover {
+    background-color: rgb(128, 128, 128);
+    cursor: pointer;
+    color: black;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+
+}
+
+.row-col {
+    width: 120px;
+    border: 1px solid rgba(0, 0, 0, 0.568);
+}
+
+.cadastrar-novamente {
+    width: 170px;
+    height: 30px;
+    background-color: rgb(0, 129, 0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    display: none;
+    transition: 0.2s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.442);
+}
+
+.cadastrar-novamente:hover {
+    cursor: pointer;
+    background-color: rgb(0, 87, 0);
+    transition: 0.2s;
+}
+
+.row:hover .cadastrar-novamente {
+    display: flex;
+}
+
+

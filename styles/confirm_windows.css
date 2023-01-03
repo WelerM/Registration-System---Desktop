@@ -1,0 +1,170 @@
+
+/* ======= CONFIRM REGISTRATION ======= */
+.confirm-registration-screen {
+    display: none;
+}
+
+.confirm-registration-screen-on {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 250px;
+    border: 10px;
+    background-color: #979797;
+    background-color: #4f4f4f;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.534);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.confirm-registration-screen-on>h1 {
+    text-align: center;
+}
+
+.confirm-registration-btns {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#confirm_name,
+#confirm_doc,
+#confirm_floor {
+    color: black;
+    font-size: 20px;
+}
+
+#btn-confirmar {
+    background-color: rgba(56, 56, 56, 0.516);
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.324);
+    position: relative;
+    padding: 5px 10px;
+    transition: 0.5s;
+}
+
+#btn-confirmar:hover {
+    cursor: pointer;
+    top: 1px;
+    background-color: rgb(1, 80, 1);
+    transition: 0.5s;
+}
+
+#btn-cancelar {
+    background-color: rgb(183, 1, 1);
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    padding: 5px 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.324);
+    position: relative;
+    transition: 0.5s;
+
+}
+
+#btn-cancelar:hover {
+    cursor: pointer;
+    top: 1px;
+    background-color: rgb(115, 0, 0);
+    transition: 0.5s;
+}
+
+
+
+
+.confirm-re-registration-screen {
+    display: none;
+}
+
+.confirm-re-registration-screen-on {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 250px;
+    border: 10px;
+    background-color: #979797;
+    background-color: #4f4f4f;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.534);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.confirm-re-registration-screen-on>h1 {
+    text-align: center;
+}
+
+#re_confirm_name,
+#re_confirm_doc,
+#re_confirm_floor {
+    color: black;
+    font-size: 20px;
+}
+
+.re-confirm-registration-btns {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#re_btn_confirmar {
+    background-color: rgb(0, 102, 0);
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.324);
+    position: relative;
+    padding: 5px 10px;
+    transition: 0.5s;
+}
+
+#re_btn_confirmar:hover {
+    cursor: pointer;
+    top: 1px;
+    background-color: rgb(1, 80, 1);
+    transition: 0.5s;
+}
+
+#re_btn_cancelar {
+    background-color: rgb(183, 1, 1);
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    padding: 5px 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.324);
+    position: relative;
+    transition: 0.5s;
+
+}
+
+#re_btn_cancelar:hover {
+    cursor: pointer;
+    top: 1px;
+    background-color: rgb(115, 0, 0);
+    transition: 0.5s;
+}

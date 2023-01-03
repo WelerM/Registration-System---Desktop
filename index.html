@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./styles/registration_interface.css">
+    <link rel="stylesheet" href="./styles/search_interface.css">
+    <link rel="stylesheet" href="./styles/tables.css">
+    <link rel="stylesheet" href="./styles/main_interface.css">
+    <link rel="stylesheet" href="./styles/confirm_windows.css">
+    <link rel="stylesheet" href="./styles/login_screen.css">
+    <script src="./renderer.js" defer></script>
+</head>
+
+<body>
+    <header>
+
+        <div class="header-login-container">
+            <img src="./img/user.png" alt="">
+            <h4 class="header_login_user_name">Logar</h4>
+        </div>
+
+        <div class="header-adress-info">
+
+        </div>
+
+        <div class="header-date-info">
+            <ul>
+                <li>Hora: <span id="header-hour"></span></li>
+            </ul>
+        </div>
+        
+    </header>
+
+    <div class="main-interface">
+
+        <div class="registration-interface">
+            <h3>cadastrar novo visitante</h4>
+            <p>Nome</p>
+            <input id="input-nome" type="text" placeholder="nome" required>
+            <p>Documento</p>
+            <input id="input-documento" type="text" placeholder="documento">
+            <p>Andar</p>
+            <input id="input-andar" type="text" placeholder="andar">
+            <p>Tipo de visita</p>
+            <div class="options_container">
+                <h4 class="selecione_aqui">Selecione aqui</h3>
+                <option class="option">horário agendado</option>
+                <option class="option">prestação de serviços</option>
+                <option class="option">entrega no andar</option>
+                <option class="option">falar com funcionários</option>
+                <option class="option">outro</option>
+            </div>
+            <p class="cadastro-warning-hide">É necessário preencher todos os campos!</p>
+            <div class="clean_btns_container">
+                <div id="limpar-dados">
+                    <img src="./img/trash_can.png" alt=""> 
+                    <p>LIMPAR CAMPOS</p>
+                </div>
+                <div id="btn_clean_columns">
+                    <img src="./img/trash_can.png" alt="">
+                    <p>LIMPAR COLUNAS</p> 
+                </div>
+            </div>
+            <button id="btn_cadastrar">
+                <img src="./img/save.png" alt="">
+                <p>INSERIR</p>
+            </button>
+  <!--           <button class="btn_unavailable">
+                <p>Indisponível para visitantes</p>
+            </button> -->
+        </div>
+
+        <div class="pagina-busca-container">
+            <div class="output-filtro-container">
+                <div class="busca-options-left-container">
+                    <h3>pesquisa rápida</h3>
+                    <input id="pesquisar-por-nome" type="text" placeholder="Pesquisar por nome">
+                    <input id="pesquisar-por-documento" type="text" placeholder="Pesquisar por documento">
+                </div>
+
+                <div class="busca-options-right-container">
+                    <h3>pesquisa por data</h3>
+                    <div class="dia-container">
+                        <div class="dia-container-mes">
+                            <img src="./img/arrow.png" id="anterior">
+                            <p id="dp_mes"></p>
+                            <img src="./img/arrow.png" id="proximo">
+                        </div>
+                        <div class="dia-container-dia">
+                            <div class="dia">01</div>
+                            <div class="dia">02</div>
+                            <div class="dia">03</div>
+                            <div class="dia">04</div>
+                            <div class="dia">05</div>
+                            <div class="dia">06</div>
+                            <div class="dia">07</div>
+                            <div class="dia">08</div>
+                            <div class="dia">09</div>
+                            <div class="dia">10</div>
+                            <div class="dia">11</div>
+                            <div class="dia">12</div>
+                            <div class="dia">13</div>
+                            <div class="dia">14</div>
+                            <div class="dia">15</div>
+                            <div class="dia">16</div>
+                            <div class="dia">17</div>
+                            <div class="dia">18</div>
+                            <div class="dia">19</div>
+                            <div class="dia">20</div>
+                            <div class="dia">21</div>
+                            <div class="dia">22</div>
+                            <div class="dia">23</div>
+                            <div class="dia">24</div>
+                            <div class="dia">25</div>
+                            <div class="dia">26</div>
+                            <div class="dia">27</div>
+                            <div class="dia">28</div>
+                            <div class="dia">29</div>
+                            <div class="dia">30</div>
+                            <div class="dia">31</div>
+                            <div class="dia" id="todos-dias">todos</div>
+                        </div>
+                    </div>
+                    <button id="procurar">
+                        <img src="./img/search.png" alt="">
+                         <p>PROCURAR</p> 
+                    </button>
+                </div>
+
+                <div class="statistics-container">
+                    <h3>estatisticas de cadastros</h3>
+                    <div class="statistics-inner-container">
+                        <p class="statistic_line">Hoje:<span id="statistic_today"></span></p>
+                        <p class="statistic_line">Neste mês:<span id="statistic_month"></span></p>
+                        <p class="statistic_line">Total::<span id="statistic_total"></span></p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="output-screen"> 
+                <h3 id="output-h2">resultado</h3>
+                <div class="output-screen-container-titles">
+                    <div class="col-title">data</div>
+                    <div class="col-title">hora</div>
+                    <div class="col-title">nome</div>
+                    <div class="col-title">documento</div>
+                    <div class="col-title">andar</div>
+                    <div class="col-title-visita">tipo de visita</div>
+                    <div class="col-title-blank"></div>
+                </div>
+
+                <div class="nada-encontrado">
+                    <h4>Nenhum dado encontrado</h4>
+                </div>
+
+                <!-- Colums (built by JavaScript)-->
+                <div class="colunas-container">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="confirm-registration-screen">
+        <h1>novo cadastro para</h1>
+        <h3>Nome: <span id="confirm_name"></span></h3>
+        <h3>Documento: <span id="confirm_doc"></span></h3>
+        <h3>Andar: <span id="confirm_floor"></span></h3>
+        <div class="confirm-registration-btns">
+            <button id="btn-confirmar">CONFIRMAR</button>
+            <button id="btn-cancelar">CANCELAR</button>
+        </div>
+    </div>
+
+    <div class="confirm-re-registration-screen">
+        <h1>novo cadastro para</h1>
+        <h3>Nome: <span id="re_confirm_name"> </span></h3>
+        <h3>Documento: <span id="re_confirm_doc"> </span></h3>
+        <h3>Andar: <span id="re_confirm_floor"> </span></h3>
+        <div class="re-confirm-registration-btns">
+            <button id="re_btn_confirmar">CONFIRMAR</button>
+            <button id="re_btn_cancelar">CANCELAR</button>
+        </div>
+    </div>
+
+<!--     <div class="login-screen">
+        <div class="login-container">
+            <h1>sistema de cadastro</h1>
+            <h2> <img src="./img/user.png" alt=""></i> Login</h2>
+            <div class="login-btn-container">
+                <div class="login-form">
+                    <input id="login_user" type="text" placeholder="Usuário">
+                    <input id="login_password" type="password" placeholder="Senha">
+                    <button class="funcionario">Logar</button>
+                </div>
+                <button class="visitante">Visitante</button>
+            </div>
+        </div>
+    </div> -->
+</body>
+
+</html>

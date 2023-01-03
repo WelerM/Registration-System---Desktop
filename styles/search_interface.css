@@ -1,0 +1,266 @@
+
+/* ======= SEARCH INTERFACE ======= */
+.pagina-busca-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: 0.7s;
+    padding-bottom: 50px;
+}
+
+.busca-options-left-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 270px;
+    align-items: center;
+    padding: 20px;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#pesquisar-por-nome,
+#pesquisar-por-documento {
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.356);
+    border-radius: 5px;
+    padding: 0px 5px;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+    outline: none;
+    padding-left: 10px;
+    width: 100%;
+    border: none;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.128);
+}
+
+/* ====== DATE PICKER ======= */
+.busca-options-right-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    width: auto;
+}
+
+.dia-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 390px;
+    margin-bottom: 10px;
+    gap: 10px;
+
+}
+
+.dia-container-mes {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dia-container-mes>button {
+    height: 30px;
+    width: 70px;
+    padding: 5px;
+    border: none;
+    font-size: 15px;
+}
+
+.dia-container-mes>button:hover {
+    cursor: pointer;
+}
+
+.dia-container-dia {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    transition: 0.7s;
+}
+
+.dia {
+    width: auto;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(56, 56, 56, 0.516);
+    transition: 0.4s;
+    padding: 5px;
+    padding: 0px 5px;
+    user-select: none;
+    color: white;
+    border-radius: 2px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.291);
+    border: 1px solid rgba(255, 255, 255, 0.245);
+}
+
+.dia:hover {
+    cursor: pointer;
+    background-color: rgba(31, 31, 31, 0.516);
+    transition: 0.5s;
+}
+
+#todos-dias {
+    letter-spacing: 0.5px;
+    width: 67px;
+}
+
+#procurar {
+    height: 30px;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.245);
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    padding: 0px 10px;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    outline: none;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.346);
+    transition: 0.5s;
+    background-color: rgba(56, 56, 56, 0.516);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px ;
+}
+#procurar > img{
+    width: 20px;
+}
+
+#procurar:hover {
+    cursor: pointer;
+    background-color: rgba(31, 31, 31, 0.516);
+    transition: 0.5s;
+}
+
+
+
+
+
+/* ====== STATISTICS SCREEN ======= */
+.statistics-container {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+    padding: 10px;
+}
+.statistics-container > h3 {
+    margin-bottom: 5px;
+}
+
+.statistics-inner-container {
+    height: 100%;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.statistics-inner-container > p {
+    font-size: 19px;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding:10px;
+    padding-right: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.324);
+}
+
+.statistics-inner-container> p > * {
+    font-size: 19px;
+    color: rgb(27, 246, 27);
+}
+
+
+.output-filtro-container {
+    padding-bottom: 0px;
+    display: flex;
+    gap: 5px;
+    border-bottom: none;
+    width: 950px;
+    background-color: #2D2D2D;
+}
+
+.output-filtro-container>h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#output-btn {
+    height: 40px;
+    width: 200px;
+}
+
+#proximo {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    width: 50px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: 0.5s;
+    background-color: rgba(63, 63, 63, 0.356);
+    border: 1px solid rgba(255, 255, 255, 0.245);
+}
+
+#proximo:hover {}
+
+.dia-container-mes>p {
+    font-size: 30px;
+}
+
+#anterior {
+    width: 50px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: rgba(63, 63, 63, 0.356);
+    transition: 0.5s;
+    border: 1px solid rgba(255, 255, 255, 0.245);
+}
+
+#proximo:hover,
+#anterior:hover {
+    cursor: pointer;
+    background-color: rgba(31, 31, 31, 0.516);
+    transition: 0.5s;
+}
+
+#select-dia {
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    text-align: center;
+    padding: 0px 5px;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+}
+
+#select-dia:hover {
+    cursor: pointer;
+}
+
+#select-mes {
+    height: 30px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+}
+
+#select-mes:hover {
+    cursor: pointer;
+}
+
