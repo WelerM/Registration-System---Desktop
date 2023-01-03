@@ -335,12 +335,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/WelerM/Registration-system---Desktop.git"
+    "url": "git+https://github.com/WelerM/Registration-System---Desktop"
   },
   "author": "Weler S. Martins",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/WelerM/Registration-system---Desktop/issues"
+    "url": "https://github.com/WelerM/Registration-System---Desktop/issues"
   },
-  "homepage": "https://github.com/WelerM/Registration-system---Desktop#readme"
+  "homepage": "https://github.com/WelerM/Registration-System---Desktop#readme"
 }
