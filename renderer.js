@@ -101,7 +101,9 @@ var obj_re_entry = {
     mes: '',
     dia: ''
 }
-var guest_control = false
+
+//Controls whether or not a new registration from an already registered guest can be done
+var guest_control = true
 
 window.electronAPI.search_by_month_jan()
 window.electronAPI.search_by_month_feb()
