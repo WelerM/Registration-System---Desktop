@@ -25,7 +25,7 @@ const createWindow = () => {
       preload: path.join(__dirname, 'preload.js')
     }
   })
- win.webContents.openDevTools()
+ //win.webContents.openDevTools()
 
 
   // =========== REGISTRATION INTERFACE =========//
